@@ -1,0 +1,25 @@
+# Arquitectura del laboratorio
+
+
+
+![Arquitectura del laboratorio](arquitectura-laboratorio.svg)
+
+
+
+## Máquinas
+
+| Máquina | Rol | IP |
+|---|---|---|
+| Kali Linux | Atacante | 192.168.0.14 |
+| Ubuntu | Víctima (con agente Wazuh) | 192.168.0.13 |
+| Wazuh Server (OVA) | SIEM / Monitoreo | 192.168.0.12 |
+
+## Red
+
+Las tres VMs están en modo **puente (bridge)** dentro de la red 192.168.0.0/24.
+
+## Flujo
+
+1. Kali realiza ataques contra Ubuntu.
+2. El agente Wazuh de Ubuntu envía los logs al servidor Wazuh.
+3. Wazuh analiza los eventos y genera alertas en el dashboard.
