@@ -19,3 +19,10 @@ Simular diferentes actividades de seguridad desde Kali Linux contra Ubuntu y ana
 - Wazuh
 - Virtualización
 - Linux
+
+## Desafíos técnicos
+
+Las máquinas virtuales priorizaban IPv6 por defecto, lo que generaba 
+problemas de conectividad entre ellas. Se identificó la causa y se 
+solucionó deshabilitando IPv6 y configurando IPs estáticas en modo 
+puente, logrando comunicación estable entre Kali, Ubuntu y Wazuh.
