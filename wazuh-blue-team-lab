@@ -1,0 +1,60 @@
+# Wazuh Blue Team Lab
+
+Laboratorio práctico de ciberseguridad orientado a Blue Team, detección y mitigación de ataques.
+
+## 🖥️ Arquitectura
+
+- Kali Linux: máquina atacante
+- Ubuntu: máquina víctima
+- Wazuh: monitoreo y detección de eventos
+- Fail2Ban: mitigación y bloqueo de intentos de ataque
+
+## 🎯 Objetivo
+
+Simular un escenario de ataque controlado y analizar cómo las herramientas de seguridad permiten detectar y mitigar actividades sospechosas.
+
+## 🔴 Ataque
+
+Se realizan intentos de fuerza bruta desde Kali Linux contra Ubuntu.
+
+## 🛡️ Detección
+
+Wazuh recibe y analiza los eventos generados en Ubuntu para identificar actividad sospechosa.
+
+## 🚫 Mitigación
+
+Fail2Ban analiza los intentos de autenticación y bloquea la dirección IP que realiza múltiples intentos fallidos.
+
+## 📊 Flujo del laboratorio
+
+Kali Linux
+↓
+Ataque de fuerza bruta
+↓
+Ubuntu
+↓
+Logs
+↓
+Wazuh
+↓
+Detección
+↓
+Fail2Ban
+↓
+Bloqueo de IP
+
+## 📚 Tecnologías utilizadas
+
+- Linux
+- Kali Linux
+- Ubuntu
+- Wazuh
+- Fail2Ban
+- SSH
+- SIEM
+- Blue Team
+- Detección y respuesta
+
+## ⚠️ Aviso
+
+Este laboratorio fue realizado en un entorno controlado y con fines educativos.
